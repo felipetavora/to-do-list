@@ -1,0 +1,44 @@
+.section {
+   display: flex;
+   justify-content: center;
+}
+
+.container {
+   display: flex;
+   height: 45px;
+   margin-top: 135px;
+   z-index: 1;
+}
+
+.inputTask {
+   width: 638px;
+   display: flex;
+   margin-right: 0.5rem;
+   background: var(--gray-300);
+   border: 1px solid transparent;
+   border-radius: 6px;
+   padding: 16px;
+   color: var(--gray-100);
+}
+
+.buttonCreateTask {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 90px;
+   background: var(--blue-dark);
+   border: none;
+   color: var(--gray-100);
+   border-radius: 8px;
+   font-size: 14px;
+   transition: background-color 0.2s;
+}
+
+.buttonCreateTask:hover {
+   cursor: pointer;
+   background: var(--blue-light);
+}
+
+.icon {
+   margin-left: 5px;
+}

@@ -1,0 +1,156 @@
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 0px;
+   gap: 24px;
+   position: absolute;
+   width: 736px;
+   height: 451px;
+   left: calc(50% - 736px / 2);
+   top: 245px;
+}
+
+.countContainer {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: start;
+   align-self: stretch;
+}
+
+.countContainer span {
+   font-weight: 700;
+   font-size: 14px;
+}
+
+.countContainer span.tasks {
+   color: var(--blue-light);
+}
+
+.countContainer span.concludedTasks {
+   color: var(--purple-500);
+}
+
+.countContainer span strong {
+   font-size: 12px;
+   background: var(--gray-400);
+   border-radius: 999px;
+   padding: 2px 8px;
+   width: 24px;
+   height: 19px;
+   color: white;
+   margin-left: 4px;
+}
+
+.list {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+   gap: 12px;
+   color: var(--gray-100);
+   background: var(--gray-600);
+   border: 1px solid var(--gray-400);
+   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+   border-radius: 8px;
+   align-self: stretch;
+   margin-bottom: -12px;
+}
+
+.listContainer {
+   display: flex;
+   gap: 0.8rem;
+   align-items: center;
+}
+
+input.radio[type='checkbox'] {
+   display: none;
+}
+
+input.radioChecked[type='checkbox'] {
+   display: none;
+}
+
+input.radio[type='checkbox'] + label:before {
+   content: '✔';
+   color: transparent;
+   font-size: 11px;
+   width: 12px;
+   height: 12px;
+   padding: 0 0 3px 3px;
+   border-radius: 100%;
+   border: 2px solid var(--blue-light);
+   background-color: none;
+   display: inline-block;
+   cursor: pointer;
+   transition: background-color 0.2s;
+}
+
+input.radioChecked[type='checkbox'] + label:before {
+   content: '✔';
+   font-size: 11px;
+   width: 12px;
+   height: 12px;
+   padding: 0 0 3px 3px;
+   border-radius: 100%;
+   border: 2px solid var(--purple-500);
+   background-color: var(--purple-500);
+   display: inline-block;
+   cursor: pointer;
+   transition: background-color 0.2s;
+}
+
+input.radio[type='checkbox'] + label:hover:before {
+   background: var(--gray-400);
+}
+
+input.radioChecked[type='checkbox'] + label:hover:before {
+   border: 2px solid var(--purple-100);
+   background-color: var(--purple-100);
+   transition: all 0.2s;
+}
+
+.textChecked {
+   text-decoration: line-through;
+   color: var(--gray-200);
+}
+
+.trash {
+   display: flex;
+   align-items: center;
+   background: transparent;
+   padding: 6px 8px;
+   border: none;
+   border-radius: 4px;
+   color: var(--gray-200);
+   transition: background-color 0.2s;
+}
+
+.trash:hover {
+   cursor: pointer;
+   background: var(--gray-400);
+   color: var(--red-500);
+}
+
+.emptyList {
+   display: flex;
+   justify-content: center;
+   align-self: stretch;
+   border-radius: 5px;
+   border-top: 1px solid var(--gray-400);
+}
+
+.emptyList img {
+   margin-top: 3rem;
+}
+
+.span {
+   color: var(--gray-200);
+   font-size: 14px;
+}
+
+.span strong {
+   color: var(--purple-500);
+}
